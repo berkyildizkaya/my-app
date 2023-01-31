@@ -1,9 +1,12 @@
+import React from "react";
 import  Container  from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
-function MainMenu() {
-    return (
+
+class MainMenu extends React.Component{
+    render(){
+        return (
         <>
         <Navbar bg="dark" variant="dark">
             <Container>
@@ -17,6 +20,7 @@ function MainMenu() {
         </Navbar>
         </>
     );
+    }
 }
 
 export default MainMenu;
