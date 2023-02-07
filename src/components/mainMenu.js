@@ -3,14 +3,12 @@ import  Container  from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
-
-class MainMenu extends React.Component{
-    render(){
-        return (
+function MainMenu(){
+    return (
         <>
         <Navbar bg="dark" variant="dark">
             <Container>
-                <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+            <Navbar.Brand href="#home">Navbar</Navbar.Brand>
                 <Nav className="me-auto">
                     <Nav.Link href="#AnaSayfa">Anasayfa</Nav.Link>
                     <Nav.Link href="#Galeri">Galeri</Nav.Link>
@@ -19,8 +17,8 @@ class MainMenu extends React.Component{
             </Container>
         </Navbar>
         </>
-    );
-    }
+    )
 }
+
 
 export default MainMenu;
