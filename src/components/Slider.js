@@ -9,7 +9,7 @@ function Slider()
         setIndex(selectedIndex);
     };
     return(
-        <Carousel activeIndex={index} onSelect={handleSelect}>
+        <Carousel activeIndex={index} onSelect={handleSelect} fade>
 
         <Carousel.Item>
         <img className="d-block w-100" src="https://images8.alphacoders.com/545/545905.jpg" alt="İlk Slide"/>
