@@ -3,11 +3,13 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import MainMenu from './components/mainMenu';
 import Content from './components/Content';
+import Footer from './components/Footer';
 function App() {
   return (
     <div>
     <MainMenu></MainMenu>
     <Content></Content>
+    <Footer></Footer>
     </div>
     // <div className="App">
     //   <header className="App-header">
