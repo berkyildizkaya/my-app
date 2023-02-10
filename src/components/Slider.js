@@ -15,7 +15,7 @@ function Slider()
         <img className="d-block w-100" src="https://images8.alphacoders.com/545/545905.jpg" alt="İlk Slide"/>
 
         <Carousel.Caption>
-        <h3> Aciklama</h3>
+        <h3>Aciklama</h3>
         <p>lorem lorem lorem lorem</p>
         </Carousel.Caption>
         </Carousel.Item>
@@ -24,7 +24,7 @@ function Slider()
         <img className="d-block w-100" src="https://images8.alphacoders.com/545/545905.jpg" alt="İlk Slide"/>
 
         <Carousel.Caption>
-        <h3> Aciklama</h3>
+        <h3>Aciklama</h3>
         <p>lorem lorem lorem lorem</p>
         </Carousel.Caption>
         </Carousel.Item>

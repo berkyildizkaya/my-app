@@ -1,10 +1,21 @@
 import React from "react";
-import { Container } from "react-bootstrap";
-import { BsGithub } from "react-icons/bs";
+import { Container,Nav } from "react-bootstrap";
+import { BsGithub,BsBehance, BsLinkedin} from "react-icons/bs";
+
 function Footer(){
     return(
         <Container  fluid className="text-center bg-dark text-light mt-3 p-5">
-            2023 @ <a href="https://github.com/berkyildizkaya"><BsGithub></BsGithub></a>
+            <Nav className="justify-content-center" activeKey="/home">
+                <Nav.Item>
+                    <Nav.Link href="http://github.com/berkyildizkaya"><BsGithub/></Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link href="http://behance.com/berkyildizkaya"><BsBehance/></Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link href="https://www.linkedin.com/in/berkyildizkaya/"><BsLinkedin/></Nav.Link>
+                </Nav.Item>
+            </Nav>
         </Container>
     )
 }
