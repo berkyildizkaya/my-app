@@ -1,4 +1,4 @@
-import { Flex, HStack, Link, Button, Text, Heading,Image,Avatar } from "@chakra-ui/react";
+import { Flex, HStack, Link, Button, Text, Heading,Image,Avatar,Box } from "@chakra-ui/react";
 import Logo  from "../assets/logotransparan.png"
 // import { Link } from '@chakra-ui/react'
 const AppNavBar = () => {
@@ -14,7 +14,7 @@ const AppNavBar = () => {
         >
           {/* <Image src={Logo} boxSize="" objectFit="cover" borderRadius="full" /> */}
           <Avatar src={Logo}></Avatar>
-          <HStack as={"nav"} spacing={"5"}>
+          <HStack as={"nav"} spacing={"5"} >
             <Link>Home</Link>
             <Link>About</Link>
             <Link>Contact</Link>
