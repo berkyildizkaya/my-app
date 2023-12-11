@@ -24,18 +24,3 @@ const AppPersonalInfo = () => {
   );
 };
 export default AppPersonalInfo;
-
-{
-  /* <Flex>
-<Flex px={4} py={4} p={"1"} >
-<Stack spacing={4} align={"center"}>
-    <Heading>
-        BEN KIMIM ? 
-    </Heading>
-</Stack>
-</Flex>
-<Flex>
-    <Image round  ed={"md"}  objectfit={"cover"}  src={"https://i.hizliresim.com/6hldrvf.jpeg"}></Image>
-</Flex>
-</Flex> */
-}
