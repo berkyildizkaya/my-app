@@ -1,3 +1,4 @@
+import AppAbout from "./AppAbout";
 import AppNavBar from "./AppNavBar";
 import AppPersonalInfo from "./AppPersonalInfo";
 
@@ -6,6 +7,7 @@ const Home = () => {
     <>
       <AppNavBar />
       <AppPersonalInfo/>
+      <AppAbout/>
     </>
   );
 };
