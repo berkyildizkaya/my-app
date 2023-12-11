@@ -10,7 +10,7 @@ const AppPersonalInfo = () => {
         direction={"row-reverse"}
       >
         <Box maxW={"md"}>
-        <Image round  ed={"md"}  objectfit={"cover"}  src={"https://i.hizliresim.com/6hldrvf.jpeg"}></Image>
+        <Image rounded={"md"}  objectfit={"cover"}  src={"https://i.hizliresim.com/6hldrvf.jpeg"}></Image>
         </Box>
         <Box maxW={"lg"}>
           <Flex direction={"column"} justifyContent={"flex-start"} alignItems={"flex-start"}>
