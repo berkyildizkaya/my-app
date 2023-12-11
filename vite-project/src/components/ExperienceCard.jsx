@@ -1,14 +1,15 @@
 import React from 'react';
 import { Card, CardHeader, CardBody, CardFooter, Flex, Box, Image, Link, Text, UnorderedList, ListItem } from '@chakra-ui/react';
-const ExperienceCard = ({ photoSrc, companyUrl, companyName, title, companyDescription, listItems }) => {
+const ExperienceCard = ({ photoSrc, companyUrl, companyName, title, companyDescription, listItems,status }) => {
   return (
     <div>
-      <Card maxW={"xl"}>
+      <Card maxW={"xl"}  mt={"5"}>
         <CardHeader>
           <Flex justifyContent={"space-between"}>
             <Box>
               <Image
-                boxSize="50px"
+              
+              boxSize={"37"}
                 src={photoSrc}
                 alt={companyName}
               />
@@ -36,7 +37,7 @@ const ExperienceCard = ({ photoSrc, companyUrl, companyName, title, companyDescr
           </UnorderedList>
         </CardBody>
         <CardFooter>
-          <Text>OK</Text>
+          <Text>{status}</Text>
         </CardFooter>
       </Card>
     </div>
