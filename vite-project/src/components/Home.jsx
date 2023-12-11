@@ -1,11 +1,13 @@
+import AppAbout from "./AppAbout";
 import AppNavBar from "./AppNavBar";
-import AppPersonalInfo from "./AppPersonalInfo";
+import AppPersonal from "./AppPersonal";
 
 const Home = () => {
   return (
     <>
       <AppNavBar />
-      <AppPersonalInfo/>
+      <AppPersonal/>
+      <AppAbout/>
     </>
   );
 };
