@@ -1,6 +1,7 @@
 import AppAbout from "./AppAbout";
 import AppNavBar from "./AppNavBar";
 import AppPersonal from "./AppPersonal";
+import AppProjects from "./AppProjects";
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
       <AppNavBar />
       <AppPersonal/>
       <AppAbout/>
+      <AppProjects/>
     </>
   );
 };
