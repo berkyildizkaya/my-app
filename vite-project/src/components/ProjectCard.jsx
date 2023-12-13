@@ -1,50 +1,81 @@
 import {
-    Card,
-    CardBody,
-    CardHeader,
-    Flex,
-    IconButton,
-    Text,
-    Box,
-    Image,
-    Spacer,
-    Collapse, // Import the Image component from Chakra UI
-  } from "@chakra-ui/react";
-  import { BsThreeDotsVertical } from "react-icons/bs";
-  import { useState } from "react";
+  Card,
+  CardBody,
+  CardHeader,
+  Flex,
+  IconButton,
+  Text,
+  Box,
+  Image,
+  Spacer,
+  CardFooter,
+  Button,
+} from "@chakra-ui/react";
+import {
+  BsThreeDotsVertical,
+  BsGithub,
+  BsBoxArrowUpRight,
+} from "react-icons/bs";
 
-  const ProjectCard = () => {
-    return (
-      <>
-        <div>
-          <Card boxShadow='md' maxW={"md"} mt={"5"}>
-            <CardHeader>
-              <Image
-                objectFit="cover"
+const ProjectCard = (props) => {
+  const { title, imageUrl, githubLink, demoLink } = props;
 
-                src="https://www.webharvy.com/images/web%20scraping%20uses.png"
-                alt="Chakra UI"
+  return (
+    <>
+      <div>
+        <Card boxShadow="md" maxW={"md"} mt={"5"}>
+          <CardHeader>
+            <Image objectFit="cover" src={imageUrl} alt={title} />
+          </CardHeader>
+
+          <CardBody>
+            <Flex
+              gap={"4"}
+              alignItems={"center"}
+              flexWrap={"nowrap"}
+              justifyContent={"space-between"}
+            >
+              <Box>
+                <Text fontSize="2xl" color={"teal"}>
+                  {title}
+                </Text>
+              </Box>
+              <Spacer />
+              <IconButton
+                variant={"ghost"}
+                colorScheme="gray"
+                icon={<BsThreeDotsVertical />}
               />
-            </CardHeader>
+            </Flex>
+          </CardBody>
+          <CardFooter
+            justify="center"
+            flexWrap="wrap"
+            sx={{
+              "& > button": {
+                minW: "136px",
+              },
+            }}
+          >
+            <Button
+              flex="1"
+              variant="ghost"
+              leftIcon={<BsGithub />}
+              as={"a"}
+              href={githubLink}
+            ></Button>
+            <Button
+              flex="1"
+              variant="ghost"
+              leftIcon={<BsBoxArrowUpRight />}
+              as={"a"}
+              href={demoLink}
+            ></Button>
+          </CardFooter>
+        </Card>
+      </div>
+    </>
+  );
+};
 
-            <CardBody>
-              <Flex gap={"4"} alignItems={"center"} flexWrap={"wrap"}>
-                <Box>
-                  <Text>Web Scrapper JS</Text>
-                </Box>
-                <Spacer/>
-                <IconButton
-                  variant={"ghost"}
-                  colorScheme="gray"
-                  icon={<BsThreeDotsVertical />}
-                />
-              </Flex>
-            </CardBody>
-
-          </Card>
-        </div>
-      </>
-    );
-  };
-
-  export default ProjectCard;
+export default ProjectCard;
